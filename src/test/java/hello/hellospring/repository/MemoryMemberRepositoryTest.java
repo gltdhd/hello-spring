@@ -2,7 +2,6 @@ package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -59,5 +58,12 @@ public class MemoryMemberRepositoryTest {
 
 
 
+    }
+
+    @Test
+    public void numTest(){
+        assertThat("hello world")
+                .isNotEmpty()
+                .contains("worlddd");
     }
 }
